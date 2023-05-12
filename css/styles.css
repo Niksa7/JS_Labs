@@ -1,0 +1,143 @@
+body{
+    margin: 0 auto;
+    justify-content: center;
+    text-align: center;
+    background-color: lightcyan;
+    font-family: Arial, sans-serif;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+}
+
+button{
+    margin-bottom: 5px;
+    margin-top: 10px;
+}
+
+/* Кнопка */
+.hide-show{
+    width: 80vw;
+    height: 30px;
+    background-color: lightgreen;
+}
+
+
+h1{
+    margin:auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 90vw;
+    background-color: lightgreen;
+}
+
+/* Календарь */
+
+table {
+    border-collapse: collapse;
+    margin: auto;
+  }
+
+th, td {
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: #ddd;
+}
+
+td:hover {
+    background-color: #eee;
+}
+
+.today {
+    font-weight: bold;
+}
+
+.weekend {
+    color: red;
+  }
+
+/* Задание 3 */
+
+#number-of-forms{
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* Задание 4 */
+
+.block {
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    transition: transform 0.5s, width 0.5s, height 0.5s;
+  }
+
+.block:hover {
+    cursor: pointer;
+}
+
+.block.active {
+    transform: scale(1.5) rotate(180deg);
+}
+
+/* Задание 7 */
+#menu {
+    display: none;
+}
+
+/* Задание 8 */
+
+.content-container {
+    position: relative;
+    width: 500px;
+    height: 300px;
+}
+
+.image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.text-8 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: white;
+    font-size: 24px;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.content-container:hover .image {
+    opacity: 1;
+}
+
+.content-container:hover .text-8 {
+    opacity: 1;
+}
+
+/* Задание 9 */
+input:invalid {
+    border: 2px solid red;
+  }
+  
+input:invalid:required {
+    background-image: linear-gradient(to right, lightblue, lightgreen);
+}
+
+input:valid {
+    border: 2px solid black;
+}
