@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/libs/font-awesome/css/font-awesome.css">
+    <script defer src="js/t10.js"></script>
     <title>JavaScript Labs</title>
 </head>
 <body>
@@ -23,14 +25,14 @@
         <!-- Задание 3 -->
         <button class="hide-show" onclick="num_of_forms();">Задание 3</button>
         <div class="content" style="display: none;">
-            <form>
+            <form class="form3">
                 <input type="text" name="name" placeholder="Имя" /><br />
                 <input type="email" name="email" placeholder="Email" /><br />
                 <input type="password" name="password" placeholder="Пароль" /><br />
                 <button type="submit">Отправить</button>
               </form>
               <br>
-            <form>
+            <form class="form3">
                 <input type="text" name="username" placeholder="Имя пользователя" /><br />
                 <input type="password" name="password" placeholder="Пароль" /><br />
                 <button type="submit">Войти</button>
@@ -79,7 +81,7 @@
             <button id="menu-button">Меню</button>
             <ul id="menu-list">
             <li>Пончики</li>
-            <li>Кексы</li>
+            <li>Кексики</li>
             <li>Маффины</li>
             <li>Мороженое</li>
             </ul>
@@ -128,49 +130,7 @@
         <!-- Задание 10 -->
         <button class="hide-show" onclick="task10();">Задание 10</button>
         <div class="content" style="display: none;">
-            <form>
-                <label>
-                  ФИО:
-                  <input type="text" id="full_name" name="full_name" required>
-                </label>
-                <br><br>
-                <label for="login">
-                  Логин:
-                  <input type="text" id="login" name="login" required>
-                </label>
-                <br><br>
-                <label>
-                  E-mail:
-                  <input type="email" name="email" id="email" required>
-                </label>
-                <br><br>
-                <label>
-                  Пароль:
-                  <input type="password" name="password" id="password" required>
-                </label>
-                <br><br>
-                <label>
-                  Повторите пароль:
-                  <input type="password" name="password-repeat" id="password-repeat" required>
-                </label>
-                <br><br>
-                <label for="date">
-                    Дата:
-                    <input type="date" id="date" name="date" required>
-                </label>
-                <br><br>
-                <label for="faculty">
-                    Факультет:
-                    <input type="text" id="faculty" name="faculty" required>
-                </label>
-                <br><br>
-                <label for="department">
-                    Кафедра:
-                    <input type="text" id="department" name="department" required>
-                </label>
-                <br>
-                <button type="submit">Зарегистрироваться</button>
-              </form>
+          
         </div>
     </div>
     <script src="/js/block.js"></script>

@@ -107,7 +107,7 @@ function calendar(){
 
 // Задание 3
 function num_of_forms() {
-  const forms = document.querySelectorAll("form");
+  const forms = document.querySelectorAll(".form3");
   const numberOfForms = forms.length;
   document.getElementById("number-of-forms").textContent = `Количество форм на странице: ${numberOfForms}`; // Выводим количество форм в элемент с id "number-of-forms"
 }
@@ -264,6 +264,8 @@ function task8(){
     image.addEventListener("mouseout", fadeIn);
 }
 
+// Задание 9
+
 function task9(){
   const emailInput = document.getElementById('email');
 
@@ -276,77 +278,8 @@ function task9(){
   });
 }
 
-function task10(){
+// 
 
-  const form = document.querySelector('form');
-  const emailField = document.querySelector('#email');
-  const passwordField = document.querySelector('#password');
-  const confirmPasswordField = document.querySelector('#confirm-password');
-  const phoneField = document.querySelector('#phone');
-  const dateField = document.querySelector('#date');
-  const nameField = document.querySelector('#name');
-  const facultyField = document.querySelector('#faculty');
-  const departmentField = document.querySelector('#department');
+function task10() {
   
-  form.addEventListener('submit', (event) => {
-    event.preventDefault();
-    
-    // Проверка email-адреса
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
-    if (!emailRegex.test(emailField.value)) {
-      emailField.classList.add('error');
-      emailField.nextElementSibling.textContent = 'Введите корректный email-адрес';
-    } else {
-      emailField.classList.remove('error');
-      emailField.nextElementSibling.textContent = '';
-    }
-    
-    // Проверка пароля
-    const passwordRegex = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$/;
-    if (!passwordRegex.test(passwordField.value)) {
-      passwordField.classList.add('error');
-      passwordField.nextElementSibling.textContent = 'Пароль должен содержать не менее 8 символов, включая цифры, заглавные и строчные буквы';
-    } else {
-      passwordField.classList.remove('error');
-      passwordField.nextElementSibling.textContent = '';
-    }
-    
-    // Проверка повтора пароля
-    if (passwordField.value !== confirmPasswordField.value) {
-      confirmPasswordField.classList.add('error');
-      confirmPasswordField.nextElementSibling.textContent = 'Пароли не совпадают';
-    } else {
-      confirmPasswordField.classList.remove('error');
-      confirmPasswordField.nextElementSibling.textContent = '';
-    }
-    
-    // Проверка номера телефона
-    const phoneRegex = /^\+?[0-9]{10,}$/;
-    if (!phoneRegex.test(phoneField.value)) {
-      phoneField.classList.add('error');
-      phoneField.nextElementSibling.textContent = 'Введите корректный номер телефона';
-    } else {
-      phoneField.classList.remove('error');
-      phoneField.nextElementSibling.textContent = '';
-    }
-    
-    // Проверка даты
-    const dateRegex = /^(0?[1-9]|[12][0-9]|3[01])\.(0?[1-9]|1[012])\.(19|20)\d{2}$/;
-    if (!dateRegex.test(dateField.value)) {
-      dateField.classList.add('error');
-      dateField.nextElementSibling.textContent = 'Введите корректную дату в формате ДД.ММ.ГГГГ';
-    } else {
-      dateField.classList.remove('error');
-      dateField.nextElementSibling.textContent = '';
-    }
-    
-    // Проверка ФИО
-    const nameRegex = /^[a-zA-Zа-яА-Я]+\s+[a-zA-Zа-яА-Я]+\s+[a-zA-Zа-яА-Я]+$/;
-    if (!nameRegex.test(nameField.value)) {
-      nameField.classList.add('error');
-      nameField.nextElementSibling.textContent = 'Введите корректное ФИО';
-    } else {
-      nameField.classList.remove;
-    }})
-
 }
